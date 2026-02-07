@@ -1,0 +1,77 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f2efe9;
+  color: #2b221b;
+  min-height: 100vh;
+}
+
+.game-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  background: #3a2d23;
+  color: #f7f1e8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.game-header .title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.95rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.stat .label {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: #d7cbb8;
+}
+
+.stat .value {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.game-content {
+  padding: 7.5rem 2.5rem 2.5rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+}
+
+.game-content p {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}

@@ -1,0 +1,136 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f2efe9;
+  color: #2b221b;
+  min-height: 100vh;
+}
+
+.game-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  background: #3a2d23;
+  color: #f7f1e8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.game-header .title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.95rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.stat .label {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: #d7cbb8;
+}
+
+.stat .value {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.game-content {
+  padding: 7.5rem 2.5rem 2.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.view-switcher {
+  display: flex;
+  gap: 1rem;
+}
+
+.view-button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.8rem;
+  background: #d8c7ad;
+  color: #3a2d23;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.view-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.view-button.is-active {
+  background: #3a2d23;
+  color: #f7f1e8;
+}
+
+.content-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.panel {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.panel h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.panel p {
+  font-size: 1.05rem;
+  color: #4b3b31;
+}
+
+.layers {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.layer-card {
+  border: 1px dashed #c8b59c;
+  border-radius: 10px;
+  padding: 1.2rem;
+  background: #faf6f0;
+  color: #6a5646;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
